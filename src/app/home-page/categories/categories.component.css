@@ -1,0 +1,21 @@
+.list-category ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 !important;
+    list-style: none;
+}
+.list-category li {
+    text-align: center;
+    cursor: pointer;
+}
+.list-category a {
+    color: #252525;
+    text-decoration: none;
+    transition: font-weight 0.3s ease;
+}
+.list-category li:hover a {
+    font-weight: 600;
+}
+.list-category .card {
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 2.6px;
+}

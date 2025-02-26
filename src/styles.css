@@ -2,8 +2,14 @@
 a
 {
     text-decoration: none !important;
+    
 }
 body
 {
-    background-color: rgb(228, 235, 228) !important;
+    background-color: rgb(230, 229, 235) !important;
+}
+ul, li
+{
+    list-style: none;
+    margin-bottom: 0;
 }

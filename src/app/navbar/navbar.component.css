@@ -1,0 +1,12 @@
+.navbar ul li 
+{
+    padding: 0 15px;
+}
+.navbar ul li:not(:last-child):hover {
+    background-color: #2a55e5;
+    border-radius: 7px;
+}
+
+.navbar ul li:not(:last-child):hover a{
+    color: #fff;
+}
