@@ -1,0 +1,50 @@
+.collection-01-ads img
+{
+height: 200px;
+/* width: 100%; */
+margin: 0 10px;
+}
+/* Custom styles for navigation buttons */
+:host ::ng-deep .carousel-control-prev, 
+:host ::ng-deep .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255); /* Dark semi-transparent background */
+opacity: 1;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+:host ::ng-deep .carousel-control-prev {
+  left: -10px; /* Move left */
+}
+
+:host ::ng-deep .carousel-control-next {
+  right: -10px; /* Move right */
+}
+
+/* Adjust icon size */
+:host ::ng-deep .carousel-control-prev-icon,
+:host ::ng-deep .carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(1); 
+}
+/* Add spacing between carousel slides */
+:host ::ng-deep .carousel-inner {
+    display: flex;
+    gap: 10px; /* Adjust the gap as needed */
+    justify-content: center;
+  }
+  
+  :host ::ng-deep .carousel-item {
+    flex: 0 0 auto;
+    padding: 10px; /* Adds padding inside each slide */
+  }
+  .card
+  {
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 2.6px;
+  }
+  

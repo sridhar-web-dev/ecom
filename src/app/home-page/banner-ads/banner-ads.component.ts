@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class BannerAdsComponent {
   images = [
-    'assets/images/banner1.jpg',
-    'assets/images/banner2.jpg',
-    'assets/images/banner3.jpg'
+    'assets/img/ads1.webp',
+    'assets/img/ads2.webp',
+    'assets/img/ads3.webp'
   ];
+fade: any;
 }
