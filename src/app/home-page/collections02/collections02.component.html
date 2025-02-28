@@ -1,0 +1,22 @@
+<section class="collection02 mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4" *ngFor="let categoryGroup of categoryGroups">
+                <div class="card mt-3 border-0">
+                    <div class="card-header border-0">
+                        <h4>{{ categoryGroup.title }}</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="d-flex">
+                            <li *ngFor="let category of categoryGroup.categories">
+                                <img [src]="category.image" alt="{{ category.name }}" class="img-fluid">
+                                <p class="mb-0">{{ category.name }}</p> <!-- Dynamic Category Name -->
+                                <p class="text-success"><b>{{ category.offer }}</b></p> <!-- Dynamic Offer -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

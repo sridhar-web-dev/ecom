@@ -1,0 +1,49 @@
+<section class="register">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center vh-100">
+        <div class="row w-75 shadow-lg rounded">
+          
+          <!-- Left Content Section -->
+          <div class="col-md-6 bg-primary text-white d-flex align-items-center justify-content-center p-5 rounded-start">
+            <div class="text-center">
+              <h1>Join Us!</h1>
+              <p>Create an account to access exclusive features.</p>
+            </div>
+          </div>
+  
+          <!-- Right Registration Form Section -->
+          <div class="col-md-6 bg-white p-5 rounded-end">
+            <h2 class="text-center mb-4">Register</h2>
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+              
+              <div class="form-group mb-3">
+                <label>Full Name</label>
+                <input type="text" class="form-control" formControlName="fullName" placeholder="Enter your full name">
+              </div>
+  
+              <div class="form-group mb-3">
+                <label>Email</label>
+                <input type="email" class="form-control" formControlName="email" placeholder="Enter your email">
+              </div>
+  
+              <div class="form-group mb-3">
+                <label>Password</label>
+                <input type="password" class="form-control" formControlName="password" placeholder="Enter your password">
+              </div>
+  
+              <div class="form-group mb-3">
+                <label>Confirm Password</label>
+                <input type="password" class="form-control" formControlName="confirmPassword" placeholder="Confirm your password">
+              </div>
+  
+              <button type="submit" class="btn btn-primary w-100" [disabled]="registerForm.invalid">
+                Register
+              </button>
+            </form>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+  

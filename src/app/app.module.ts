@@ -10,6 +10,10 @@ import { CategoriesComponent } from './home-page/categories/categories.component
 import { BannerAdsComponent } from './home-page/banner-ads/banner-ads.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { Collections01Component } from './home-page/collections01/collections01.component';
+import { Collections02Component } from './home-page/collections02/collections02.component';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,16 @@ import { Collections01Component } from './home-page/collections01/collections01.
     HomePageComponent,
     CategoriesComponent,
     BannerAdsComponent,
-    Collections01Component
+    Collections01Component,
+    Collections02Component,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,    
-    CarouselModule.forRoot()    
+    CarouselModule.forRoot(),
+    ReactiveFormsModule  
   ],
   providers: [],
   bootstrap: [AppComponent]

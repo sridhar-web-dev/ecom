@@ -1,0 +1,17 @@
+.register {
+    background-color: #f8f9fa;
+  
+    .card {
+      border: none;
+    }
+  
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+  
+    .form-control {
+      border-radius: 5px;
+    }
+  }
+  
